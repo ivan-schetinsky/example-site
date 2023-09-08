@@ -1,0 +1,68 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+
+body {
+	background: linear-gradient(135deg, rgb(74,74,74) 0%, rgb(47,47,47) 50%, rgb(11,11,11) 100%);
+	overflow: hidden;
+}
+
+.navbar {
+	width: 100%;
+	height: 45px;
+	padding: 10px;
+	background: linear-gradient(135deg, rgb(85,85,85) 0%, rgb(70,70,70) 100%);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar__form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 0px 35px;
+}
+
+.navbar__button {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	border: 0;
+
+	font-family: sans-serif;
+	font-size: 25px;
+
+	cursor: pointer;
+
+	transition: text-shadow 0.2s;
+}
+
+.navbar__button:hover {
+	color: rgb(230, 230, 230);
+	text-shadow: white 1px -1px;
+
+	transition: text-shadow 0.2s;
+}
+
+.server-list {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.server-list__server {
+	width: 100%;
+	height: 64px;
+	
+	border-radius: 10px;
+}
