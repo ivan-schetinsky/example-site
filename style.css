@@ -22,15 +22,8 @@ body {
 	justify-content: center;
 }
 
-.navbar__form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	margin: 0px 35px;
-}
-
 .navbar__button {
+	list-style: none;
 	background-color: rgba(0, 0, 0, 0);
 	color: white;
 	border: 0;
@@ -41,6 +34,8 @@ body {
 	cursor: pointer;
 
 	transition: text-shadow 0.2s;
+
+	margin: 0px 35px;
 }
 
 .navbar__button:hover {
@@ -48,6 +43,11 @@ body {
 	text-shadow: white 1px -1px;
 
 	transition: text-shadow 0.2s;
+}
+
+.navbar__button > a {
+	color: white;
+	text-decoration: none;
 }
 
 .server-list {
