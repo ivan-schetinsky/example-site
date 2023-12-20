@@ -29,5 +29,29 @@
 			Юр. и факт. адрес: по запросу
 		</div>
 	</div>
+
+	<div class="contacts_pad">
+		<h3 class="contacts_pad__header">Обратная связь</h2>
+
+		<form class="contacts_pad__form">
+			<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="Суть запроса">
+			<input type="button" value="Отправить" onclick="reportSend()">
+		</form>
+	</div>
+
+	<div id="modalbg" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">×</span>
+				<h2>Уведомление</h2>
+			</div>
+	
+			<div class="modal-body" id="modalBody">
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
