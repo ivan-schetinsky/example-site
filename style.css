@@ -8,13 +8,22 @@ body, html {
 
 body {
 	background: linear-gradient(135deg, rgb(74,74,74) 0%, rgb(47,47,47) 50%, rgb(11,11,11) 100%);
-	overflow: hidden;
+	overflow-x: hidden;
+}
+
+.home_header {
+	color: white;
+	text-align: center;
+	margin: 15px;
+
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
 	width: 100%;
 	height: 45px;
-	padding: 10px;
+	margin: 0;
+	padding: 10px 0;
 	background: linear-gradient(135deg, rgb(85,85,85) 0%, rgb(70,70,70) 100%);
 
 	display: flex;
@@ -52,17 +61,81 @@ body {
 
 .server-list {
 	width: 100%;
-	height: 100%;
-	padding: 15px;
+	/* height: 100%; */
 
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .server-list__server {
-	width: 100%;
+	width: 95%;
 	height: 64px;
+	margin: 15px;
+	padding: 15px;
 	
 	border-radius: 10px;
+
+	background-color: rgb(110, 110, 110);
+	color: white;
+	transition: background-color 0.2s, color 0.2s;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.server-list__server:hover {
+	background-color: rgb(210, 210, 210);
+	color: black;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.server-list__server__name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 500px;
+
+	margin: 0;
+	align-self: flex-start;
+}
+
+.server-list__server__status_online {
+	align-self: flex-end;
+	filter: drop-shadow(0px 0px 8px #4de048);
+}
+
+.server-list__server__status_offline {
+	align-self: flex-end;
+	filter: drop-shadow(0px 0px 8px #e04848);
+}
+
+.contacts_pad {
+	width: 95%;
+	min-height: 128px;
+
+	margin: 30px auto;
+	padding: 10px;
+
+	background-color: rgb(110, 110, 110);
+	border-radius: 16px;
+}
+
+.contacts_pad__header {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	color: rgb(204, 204, 204);
+	text-align: center;
+}
+
+.contacts_pad__infocard {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: white;
+
+	margin: 5px;
 }
